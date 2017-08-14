@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learning Javascript Again</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning Javascript Again</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
-    <script src="./Learn Basics/app.js"></script>
+
+  <div class="container mt-5">
+    <div class="card text-white bg-dark mx-auto" style="max-width: 60em">
+      <div class="card-header text-center">
+        <h3>Login</h3>
+      </div>
+      <div class="card-block">
+        <form class="form m-3">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Your First Name">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Your Last Name">
+          </div>
+          <div class="form-group">
+            <label for="lang">Language</label>
+            <select id="lang" class="form-control">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary btn-block btn-lg" id="login">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="jumbotron d-none" >
+      <h2></h2>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./Learn Basics/greet.lib.js"></script>
+  <script src="./Learn Basics/app.js"></script>
 </body>
 </html>
