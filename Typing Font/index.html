@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Looping Text</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <style>
+    #blink{
+      animation: blinkc 0.5s ease-in-out infinite alternate;
+    }
+    @keyframes blinkc {
+      0%{
+        opacity: 0.3
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="display-4">
+      Mitul
+      <hr />
+    </div>
+    <div class="h1 text-danger">
+      <span id="placeholder"></span><span id="blink">|</span>
+    </div>
+  </div>
+  <!-- <script src="./src/script.js"></script> -->
+  <script src="./src/test.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">  
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-2 mt-4 text-center">Tic Tac Toe</h1>
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto mt-5">
+        <table class="ml-auto mr-auto" id="bord">
+          <tr>
+            <td class="cell text-center" id="0"></td>
+            <td class="cell text-center" id="1"></td>
+            <td class="cell text-center" id="2"></td>
+          </tr>
+          <tr>
+            <td class="cell text-center" id="3"></td>
+            <td class="cell text-center" id="4"></td>
+            <td class="cell text-center" id="5"></td>
+          </tr>
+          <tr>
+            <td class="cell text-center" id="6"></td>
+            <td class="cell text-center" id="7"></td>
+            <td class="cell text-center" id="8"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="card text-white bg-dark mt-5 d-none" id="result">
+      <div class="card-body text-center">
+        <div class="display-2 text">
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <button class="btn btn-info btn-lg btn-block mt-3" id="reset">Reset</button>
+      </div>
+    </div>
+  </div>  
+  <script src="./app.js"></script>
+</body>
+</html>

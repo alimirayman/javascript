@@ -41,14 +41,14 @@ class BST {
     }
   }
   findMin () {
-    var cuttent = this.root;
+    var current = this.root;
     while (current.left !== null) {
       current = current.left;
     }
     return current.data;
   }
   findMax () {
-    var cuttent = this.root;
+    var current = this.root;
     while (current.right !== null) {
       current = current.right;
     }
@@ -73,3 +73,21 @@ class BST {
     return false;
   }
 }
+
+let tree = new BST()
+
+tree.add(1)
+tree.add(5)
+tree.add(4)
+tree.add(2)
+tree.add(6)
+tree.add(5)
+tree.add(8)
+
+console.log( tree.find(2) )
+console.log( tree.findMax() )
+console.log( tree.findMin() )
+console.log( tree.isPresent(1) )
+console.log( tree.find(1) )
+
+
